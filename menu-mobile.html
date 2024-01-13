@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.455">
+    <title>280Grammi - Menu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S998GNZ29H"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S998GNZ29H');
+    </script>
+
+    <script>
+      function checkWindowSize() {
+        if (window.innerWidth < 600) {
+            window.location.href = "menu.html";
+        }
+      }
+
+    // Richiama la funzione quando la finestra viene caricata
+    checkWindowSize();
+
+    // Aggiungi un ascoltatore per l'evento di ridimensionamento della finestra
+    window.addEventListener('resize', function() {
+        // Chiama la funzione quando la finestra viene ridimensionata
+        checkWindowSize();
+    });
+
+    </script>
+
+	<style>
+        * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        }
+
+        #loadingScreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        z-index: 9999; 
+    }
+
+	</style>
+</head>
+<body>
+
+<div id="pdf-container"></div>
+<div id="loadingScreen">Caricamento...</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            document.getElementById('loadingScreen').style.display = 'none';
+        }, 4500); // 10000 millisecondi equivalgono a 10 secondi
+    });
+	
+    document.addEventListener('DOMContentLoaded', function() {
+        const url = 'Menu280Grammi.pdf';
+        const container = document.getElementById('pdf-container');
+
+        pdfjsLib.getDocument(url).promise.then(pdfDoc => {
+            const totalPages = pdfDoc.numPages;
+
+            for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+                pdfDoc.getPage(pageNum).then(page => {
+                    const canvas = document.createElement('canvas');
+                    container.appendChild(canvas);
+
+                    const viewport = page.getViewport({ scale: 1.5 });
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+
+                    const context = canvas.getContext('2d');
+                    const renderCtx = {
+                        canvasContext: context,
+                        viewport: viewport
+                    };
+
+                    page.render(renderCtx);
+                });
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+        });
+    });
+</script>
+</script>
+
+</body>
+</html>

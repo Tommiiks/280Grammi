@@ -1,0 +1,249 @@
+:root {
+    color-scheme: only light;
+}
+
+@font-face {
+    font-family: Shadow;
+    src: url('../fonts/Shadows_Into_Light_Two/ShadowsIntoLightTwo-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url('../fonts/Quicksand/Quicksand-Bold.ttf');
+}
+  
+
+.center-popup {
+    align-items: top !important;
+    display: flex !important;
+    justify-content: center !important;
+
+}
+
+.swal2-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+body {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    background-color: #f5f5f5;
+
+}
+
+
+/* HEADER */
+
+
+.header {
+    position: relative;
+    height: auto;
+    max-height: 100%;
+    overflow-y: hidden;
+  
+
+}
+
+
+.header-content {
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.header-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-left {
+    position: absolute;
+    top:66%;
+    left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    overflow-y: hidden;
+    max-height: 100%;
+    
+}
+
+.header-right {
+    position: absolute;
+    top: 66%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    overflow-y: hidden;
+    max-height: 100%;
+    
+    
+}
+
+.header-left:hover, .header-right:hover {
+    opacity: 0.5;
+}
+
+.menu-link, .reservation-link{
+    overflow: hidden;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+.header-left .menu-link .consult-text, 
+.header-right .reservation-link .reserve-text {
+    color: black;
+    font-size: 5.5vw;
+    font-family: Poppins-Bold;
+    font-weight: 900;
+    overflow-y: hidden;
+    max-height: 100%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+
+}
+    
+
+.header-left .menu-text,
+.header-right .table-text {
+    position: relative;
+    font-size: 6vw;
+    font-family: Shadow;
+    font-weight: 900;
+    line-height: 0.7;
+    left: 3%;
+    overflow-y: hidden;
+    max-height: 100%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+
+}
+
+.pizza-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vw;
+}
+
+.pizza {
+    width: calc(60vw); /* Larghezza ridotta per far stare 4 pizze per riga */
+    height: auto;
+    perspective: 2000px; /* Valore di perspective aumentato */
+    transition: transform 0.5s;
+    margin: 1vw;
+    overflow: hidden;
+}
+
+.pizza img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.reviews-img {
+    width: 95vw;
+    margin-bottom: 7vw;
+}
+
+
+input {
+    width: 50%;
+    padding: 15px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 18px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Poppins-Bold', sans-serif;
+    text-align: center;
+}
+
+button {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+/* Stile quando l'input contiene testo valido */
+input:valid {
+    border: 4px solid #2e8b57; /* Colore verde */
+    color: #2e8b57;
+}
+
+/* Stile quando l'input contiene testo non valido */
+input:invalid {
+    border: 4px solid #a30b10; /* Colore rosso */
+    color: #a30b10;
+}
+
+/* Placeholder personalizzato */
+input::placeholder {
+    color: #000000;
+    font-family: 'Poppins-Bold', sans-serif;
+    opacity: 0.8;
+}
+
+/* Stile quando il campo di input è attivo */
+input:focus {
+    outline: none;
+    border: 4px solid #2146ff; /* Colore verde */
+    box-shadow: 0 0 10px rgba(209, 248, 226, 0.5);
+}
+
+
+
+  
+/* ||||||| */
+
+/* EXTRA RULES */
+
+
+.red-color-text {
+    color: #a30b10;
+}
+
+.green-color-text {
+    color: #2e8b57;
+}
+
+
+.poppins-text{
+    font-family: Poppins-Bold;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}

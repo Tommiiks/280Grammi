@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>280Grammi - Menu</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S998GNZ29H"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S998GNZ29H');
+  </script>
+
+  <script>
+    function checkWindowSize() {
+      if (window.innerWidth < 600) {
+          window.location.href = "menu-mobile.html";
+      }
+    }
+
+  // Richiama la funzione quando la finestra viene caricata
+  checkWindowSize();
+
+  // Aggiungi un ascoltatore per l'evento di ridimensionamento della finestra
+  window.addEventListener('resize', function() {
+      // Chiama la funzione quando la finestra viene ridimensionata
+      checkWindowSize();
+  });
+
+  </script>
+</head>
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+  </style>
+  
+  <object data="Menu280Grammi.pdf"
+                width="100%"
+                height="100%"> 
+  </object> 
+
+</body>
+</html>
