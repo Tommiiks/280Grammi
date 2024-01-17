@@ -13,6 +13,3 @@ Experience the taste of Italy with the 280Grammi Pizzeria Website! This GitHub r
     Menu Management Page: Implemented a user-friendly page for menu management, enabling seamless updates. The admin can easily upload a new menu PDF, ensuring the website reflects the latest culinary offerings.
         
     Interactive Elements: Incorporates JavaScript for dynamic and engaging user interactions.
-
-Collaborative Development:
-This project was a collaborative effort, and the Frontend development, including the design and user interface, was led by me. The code reflects the combined skills and creativity of the development team, with contributions from [PeppinoTechTrends](https://github.com/PeppinoTechTrends) and [Michele0303](https://github.com/Michele0303)
