@@ -8,7 +8,7 @@ Experience the taste of Italy with the 280Grammi Pizzeria Website! This GitHub r
     
     WhatsApp Table Reservations: Simplify the reservation process by allowing users to reserve a table through WhatsApp. A direct link facilitates quick and convenient booking, enhancing the overall dining experience.
     
-    Customized Design: Developed with HTML and CSS, our website boasts a unique and customized design tailored to create a visually pleasing interface. The absence of Bootstrap emphasizes a                  commitment to personalized styling and responsiveness.
+    Customized Design: Developed with HTML and CSS, our website boasts a unique and customized design tailored to create a visually pleasing interface. The absence of Bootstrap emphasizes a commitment       to personalized styling and responsiveness.
     
     Menu Management Page: Implemented a user-friendly page for menu management, enabling seamless updates. The admin can easily upload a new menu PDF, ensuring the website reflects the latest culinary offerings.
         
