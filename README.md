@@ -32,7 +32,7 @@ Explore the 280Grammi Pizzeria Website, a showcase of my web development project
 
 <h2>🌐 Currently Online for Pizzeria "280Grammi" in Naples</h2>
 
-<p>Experience the flavors of Naples through our website crafted for the renowned Pizzeria "280Grammi." Serving hundreds of users daily, the site is the digital hub for  authentic Italian menu. Scan the QR code for instant access to menu!</p>
+<p>Experience the flavors of Naples through my website crafted for the renowned Pizzeria "280Grammi." Serving hundreds of users daily, the site is the digital hub for  authentic Italian menu. Scan the QR code for instant access to menu!</p>
 
 ![QR Code](https://i.ibb.co/vkNs51z/photo-2024-01-17-14-03-14.jpg)
 
@@ -51,7 +51,8 @@ Explore the 280Grammi Pizzeria Website, a showcase of my web development project
 
 <h1>Contact Me 📩</h1>
 
-Feel free to reach out for any inquiries or collaboration opportunities.
+Feel free to reach out to me for any inquiries or collaboration opportunities.
+
 
 - Telegram: [@Tommiics](https://t.me/Tommiics)
 - Email: [tommasogrisanti04@gmail.com](mailto:tommasogrisanti04@gmail.com)
